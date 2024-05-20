@@ -1,0 +1,4 @@
+SELECT * FROM miejscowosc 
+SELECT * FROM rodzaj
+SELECT cennik.cena FROM cennik JOIN miejscowosc ON cennik.miejscowosc_id = miejscowosc.id WHERE miejscowosc.nazwa = "sopot"
+UPDATE cennik SET cena = cena + cena * 0.1 WHERE cennik.miejscowosc_id = 1

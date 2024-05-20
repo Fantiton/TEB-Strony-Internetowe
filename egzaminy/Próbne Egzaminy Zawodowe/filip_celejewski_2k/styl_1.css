@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#topLeft{
+    width: 25%;
+    height: 150px;
+    background-color: deepskyblue;
+    font-size: 120%;
+    text-align: center;
+    float: left;
+}
+#logo{
+    height: 150px;
+    width: auto;
+}
+#topRight{
+    width: 75%;
+    height: 150px;
+    background-color: deepskyblue;
+    font-size: 120%;
+    text-align: center;
+    float: left;
+}
+#header{
+    background-color: tomato;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    float: left;
+    width: 100%;
+}
+#mainLeft{
+    background-color: deepskyblue;
+    height: 350px;
+    width: 50%;
+    float: left;
+}
+#mainRight{
+    background-color: deepskyblue;
+    height: 350px;
+    width: 50%;
+    line-height: 25px;
+    float: left;
+}
+#footer{
+    background-color: tomato;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    color: maroon;
+}
+table{
+    height: 100px;
+    width: 50%;
+    margin-top: 50px;
+}
+#table{
+    width: 100%;
+}
+input{
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+}
+#mLButton{
+    width: 300px;
+}
+.numInput{
+    width: 100px;
+}
+.numInputSubmit{
+    width: 100px;
+}
+#mainLeftLeft{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#mainLeftRight{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+#mainLeftImg{
+    align-self: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    width: 200px;
+    height: auto;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+#mainRightImg{
+    align-self: left;
+    margin-top: 25px;
+    margin-right: 50px;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.bold{
+    font-weight: bold;
+}
+
