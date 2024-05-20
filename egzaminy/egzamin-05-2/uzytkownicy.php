@@ -45,7 +45,7 @@
                     $res = $con->query($sql);
                     if ($res->num_rows>0) {
                         while ($row=$res->fetch_assoc()) {
-                            if (sha1($_POST['password']) == sha1($row['haslo'])) {
+                            if (sha1($_POST['password']) == $row['haslo']) {
                                 $sql2 = 'SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM uzytkownicy JOIN dane ON uzytkownicy.id = dane.id WHERE uzytkownicy.login = "' . $_POST['login'] . '"';
                                 $res2 = $con->query($sql2);
                                 while ($row2=$res2->fetch_assoc()) {
@@ -54,12 +54,13 @@
                                         <img src="' . $row2['zdjecie'] . '" alt="osoba">
                                         <h4>' . $row2['login'] . ' (' . $wiek . ')</h4>
                                         <p>Hobby: ' . $row2['hobby'] . '</p>
-                                        <h1><img src="icon-on.png">' . $row2['przyjaciol'] . '</h1>' . //Zdjęcie dotarło do mnie zepsute :/
+                                        <h1><img src="./icon-on.png">' . $row2['przyjaciol'] . '</h1>' . 
                                         '<form action="dane.html">
                                             <input id="wizytowkaButton" type="submit" value="więcej informacji">
                                          </form>';
                                 }
                             }else{
+
                                 echo 'hasło nieprawidłowe';
                             }
                         }
